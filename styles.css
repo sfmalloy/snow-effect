@@ -1,0 +1,38 @@
+:root {
+  --link-color: #f37a29;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  background-color: #24262e;
+  color: white;
+  animation: fade-in 500ms;
+}
+
+@keyframes falling-star {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(800px);
+  }
+}
+
+#stars {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
