@@ -1,0 +1,53 @@
+main {
+  background-color: #3a3e4b;
+  width: 600px;
+  height: 300px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #24262e;
+  color: white;
+  animation: fade-in 500ms;
+}
+
+h1 {
+  margin: 0;
+  font-size: 42px;
+  text-shadow: 0 0 4px white;
+}
+
+#links {
+  display: flex;
+  column-gap: 32px;
+}
+
+a {
+  color: white;
+  font-size: 30px;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  text-shadow: 0 0 4px white;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 95%;
+  }
+}
